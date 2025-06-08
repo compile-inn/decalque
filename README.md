@@ -1,0 +1,2 @@
+# Decalque
+Decalque is a toy language. It is made from different introductory languages called calc. It is a play on words a decalque in french means copy. It is also slang for being very tired, reflecting my late night coding sessions.
