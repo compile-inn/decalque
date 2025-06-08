@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/decalque/META"
+  "_build/install/default/lib/decalque/dune-package"
+  "_build/install/default/lib/decalque/opam"
+]
+bin: [
+  "_build/install/default/bin/decalque"
+]

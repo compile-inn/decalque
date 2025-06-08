@@ -1,0 +1,10 @@
+(library
+ (name decalque)
+ (libraries cmdliner str))
+
+(ocamllex lexer)
+
+(menhir
+ (modules parser)
+ (infer true)
+ )

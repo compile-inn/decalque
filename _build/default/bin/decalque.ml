@@ -1,0 +1,1 @@
+let () = Decalque.Cli.main ()
