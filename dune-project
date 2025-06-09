@@ -20,7 +20,7 @@
  (synopsis "Decalque is part of the plloo. The Programming Languages Loo; an eyebrow reverence to the famous plzoo.")
  (description "Decalque is a language based on many calc exemples. 
  It is a play on words as decalque means both a copy and to be utterly tired; 
- state of which I am in when I code at night. This is a toy language for learning purpose. )
+ state of which I am in when I code at night. This is a toy language for learning purpose.")
  (depends ocaml)
  (tags
   ("add topics" "to describe" your project)))

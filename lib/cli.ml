@@ -44,6 +44,16 @@ let rec eval = function
     | VInt na, VInt nb -> VInt (na mod nb)
     | _, _ -> failwith  "Mod operands needs to be int.")
 
+  | Ast.Even e ->
+    (match (eval e) with
+    | VInt n -> if (n mod 2 = 0) then VBool true else VBool false
+    | _ -> failwith "Even only accepts int")
+  
+  | Odd e ->
+  (match (eval e) with
+  | VInt n -> if (n mod 2 = 0) then VBool false else VBool true
+  | _ -> failwith "Even only accepts int")
+
   | Word v -> VWord v
   | Ast.Phrase p -> VWord p
   

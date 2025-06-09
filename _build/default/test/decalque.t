@@ -38,13 +38,14 @@
   foo
 
   $ decalque -e ':is_even 2'
-  true
+
 
   $ decalque -e ':is_odd 3' 
-  true
+
 
   $ decalque -e 'true :and true'
   parse error near character 5
+
 
   $ decalque -e 'true :or false'
   parse error near character 5

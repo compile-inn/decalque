@@ -8,10 +8,12 @@ type token =
   | REMOVE
   | PLUS
   | PHRASE of (string)
+  | ODD
   | MOD
   | MINUS
   | INT of (int)
   | FLOAT of (float)
+  | EVEN
   | EOF
   | DQUOTE
   | DIVIDE

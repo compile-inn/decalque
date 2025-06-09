@@ -9,7 +9,8 @@
 %token MOD
 %token CONCAT
 %token REMOVE
-
+%token EVEN 
+%token ODD
 
 %start<Ast.exp> main
 
@@ -17,7 +18,7 @@
 %left TIMES DIVIDE
 %left CONCAT
 
-%nonassoc UMINUS REMOVE MOD
+%nonassoc UMINUS REMOVE MOD EVEN ODD
 
 %{ open Ast %}
 
@@ -40,5 +41,7 @@ expr:
 | DQUOTE p = PHRASE DQUOTE { Phrase p }
 | expr CONCAT expr { Concat ($1, $3) }
 | expr REMOVE expr { Remove ($1, $3) }
+| EVEN expr { Even $2 }
+| ODD expr { Odd $2 }
 
 %%

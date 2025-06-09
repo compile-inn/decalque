@@ -11,3 +11,5 @@ type exp =
   | Phrase of string
   | Concat of exp * exp (* concatenation of two strings *)
   | Remove of exp * exp (* removes a substring from a string *)
+  | Even of exp
+  | Odd of exp
