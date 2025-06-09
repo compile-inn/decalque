@@ -1,0 +1,18 @@
+# OCaml build artifacts
+*.cmo
+*.cmi
+*.cmx
+*.o
+*.a
+*.cmxa
+*.exe
+
+# Dune build directory
+_build/
+
+# OPAM files
+*.opam
+opam.lock
+
+# IDE
+.vscode/
