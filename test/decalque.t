@@ -25,6 +25,12 @@
   $ decalque -e '84/2.0'
   42.
 
+  $ decalque -e '2 * 10 + 2'
+  22
+
+  $ decalque -e '2 * (10 + 2)'
+  24
+
   $ decalque -e '42 mod 2'
   parse error near character 7
 

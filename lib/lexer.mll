@@ -15,6 +15,8 @@ rule token =
     | '-' { Parser.MINUS } 
     | '*' { Parser.TIMES }
     | '/' { Parser.DIVIDE }
+    | '(' { Parser.LPAREN }
+    | ')' { Parser.RPAREN }
     | '"' { Parser.DQUOTE }
     | '^' { Parser.CONCAT }
     | '#' { Parser.REMOVE }

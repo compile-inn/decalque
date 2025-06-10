@@ -11,6 +11,7 @@
 %token REMOVE
 %token EVEN 
 %token ODD
+%token LPAREN RPAREN
 
 %start<Ast.exp> main
 
@@ -43,5 +44,6 @@ expr:
 | expr REMOVE expr { Remove ($1, $3) }
 | EVEN expr { Even $2 }
 | ODD expr { Odd $2 }
+| LPAREN e = expr RPAREN { e }
 
 %%
