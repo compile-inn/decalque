@@ -6,8 +6,8 @@ type exp =
   | Multiply of exp * exp
   | Divide of exp * exp
   | Negate of exp
-  | Mod of exp * exp (* a mod b *)
-  | Word of string (* a string *)
+  | Mod of exp * exp 
+  | Word of string 
   | Phrase of string
   | Concat of exp * exp (* concatenation of two strings *)
   | Remove of exp * exp (* removes a substring from a string *)
