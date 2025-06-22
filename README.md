@@ -8,29 +8,29 @@ It also has two simple operations on strings, namely concatenation (^) and filte
 
 ## Examples
 
-40 + 2
+40 + 2 <br>
 42
 
-44 - 2
+44 - 2 <br>
 42
 
-21 * 2
+21 * 2 <br>
 42
 
-42 :mod 2
+42 :mod 2 <br>
 0
 
-84.0 / 2
+84.0 / 2 <br>
 42.
 
-:is_even (42*2+1)
+:is_even (42*2+1) <br>
 false
 
-:is_odd (42*2+1)
+:is_odd (42*2+1) <br>
 true
 
-"hello" ^ " worlds"
+"hello" ^ " worlds" <br>
 hello worlds
 
-"foobar" # "bar"
+"foobar" # "bar" <br>
 foo
