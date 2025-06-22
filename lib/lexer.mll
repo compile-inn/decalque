@@ -5,8 +5,6 @@ let digit = ['0'-'9']
 let word = ['a'-'z' 'A'-'Z']*
 
 
-(* Because of 'precedence' [space] and [digit] cannot be tokenized as WORD when
-    they are passed as singletons. *)
 rule token = 
     parse
     | space { token lexbuf }
